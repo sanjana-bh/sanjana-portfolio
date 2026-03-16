@@ -258,7 +258,7 @@ function SkillGroup({ title, items, color }: { title: string; items: string[]; c
         visible: { opacity: 1, y: 0 }
       }}
       whileHover={{ y: -8, scale: 1.02 }}
-      transition={{ type: "spring", stiffness: 300 }}
+      transition={{ type: "spring"as const, stiffness: 300 }}
       className="group relative"
     >
       {/* Gradient border effect with glow */}

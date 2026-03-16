@@ -87,7 +87,7 @@ export default function Contact() {
           initial={{ scale: 0 }}
           whileInView={{ scale: 1 }}
           viewport={{ once: true }}
-          transition={{ delay: 0.1, type: "spring", stiffness: 200 }}
+          transition={{ delay: 0.1, type: "spring"as const, stiffness: 200 }}
           className="flex justify-center mb-12"
         >
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-gray-800/30 backdrop-blur-sm border border-green-500/30 rounded-full">
@@ -246,7 +246,7 @@ function ContactCard({ icon, label, value, action, color, copied, variants }: an
     <motion.div
       variants={variants}
       whileHover={{ y: -8, scale: 1.05 }}
-      transition={{ type: "spring", stiffness: 300 }}
+      transition={{ type: "spring"as const, stiffness: 300 }}
       onClick={action}
       className={`group relative cursor-pointer ${action ? 'cursor-pointer' : ''}`}
     >

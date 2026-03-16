@@ -39,7 +39,7 @@ export default function Navbar() {
       <motion.nav
         initial={{ y: -100 }}
         animate={{ y: 0 }}
-        transition={{ duration: 0.5, type: "spring", stiffness: 100 }}
+        transition={{ duration: 0.5, type: "spring"as const, stiffness: 100 }}
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
           isScrolled 
             ? "bg-gray-950/95 backdrop-blur-xl border-b border-purple-500/30 py-3 shadow-lg shadow-purple-500/5" 
@@ -61,7 +61,7 @@ export default function Navbar() {
               <motion.h1 
                 className="text-2xl font-bold relative"
                 whileHover={{ scale: 1.05 }}
-                transition={{ type: "spring", stiffness: 400 }}
+                transition={{ type: "spring"as const, stiffness: 400 }}
               >
                 <span className="bg-gradient-to-r from-purple-400 via-blue-400 to-cyan-400 bg-clip-text text-transparent">
                   Sanjana
@@ -107,7 +107,7 @@ export default function Navbar() {
                         <motion.span 
                           layoutId="activeNav"
                           className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-1/2 h-0.5 bg-gradient-to-r from-purple-500 to-blue-500"
-                          transition={{ type: "spring", stiffness: 300 }}
+                          transition={{ type: "spring"as const, stiffness: 300 }}
                         />
                       )}
                     </Link>

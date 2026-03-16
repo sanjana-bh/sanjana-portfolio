@@ -82,7 +82,7 @@ export default function QualificationsPage() {
           <motion.div
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
-            transition={{ delay: 0.2, type: "spring", stiffness: 200 }}
+            transition={{ delay: 0.2, type: "spring"as const, stiffness: 200 }}
             className="inline-flex items-center gap-2 px-4 py-2 bg-purple-900/30 border border-purple-500/30 rounded-full text-purple-300 text-sm font-medium mb-6"
           >
             <SparklesIcon className="w-4 h-4" />
@@ -148,7 +148,7 @@ export default function QualificationsPage() {
                   <div className={`w-full md:w-1/2 ${index % 2 === 0 ? 'md:text-right' : ''} pl-12 md:pl-0`}>
                     <motion.div
                       whileHover={{ y: -6, scale: 1.02 }}
-                      transition={{ type: "spring", stiffness: 300 }}
+                      transition={{ type: "spring"as const, stiffness: 300 }}
                       className="group relative"
                     >
                       <div className="absolute -inset-0.5 bg-gradient-to-r from-purple-600 to-blue-600 rounded-2xl opacity-0 group-hover:opacity-30 transition-opacity duration-500 blur-lg" />
@@ -211,7 +211,7 @@ export default function QualificationsPage() {
                 key={index}
                 variants={itemVariants}
                 whileHover={{ y: -4, scale: 1.01 }}
-                transition={{ type: "spring", stiffness: 300 }}
+                transition={{ type: "spring"as const, stiffness: 300 }}
                 className="group relative"
               >
                 <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-2xl opacity-0 group-hover:opacity-30 transition-opacity duration-500 blur-lg" />
@@ -283,7 +283,7 @@ export default function QualificationsPage() {
                 key={index}
                 variants={itemVariants}
                 whileHover={{ y: -4, scale: 1.02 }}
-                transition={{ type: "spring", stiffness: 300 }}
+                transition={{ type: "spring"as const, stiffness: 300 }}
                 className="group relative"
               >
                 <div className="absolute -inset-0.5 bg-gradient-to-r from-cyan-600 to-blue-600 rounded-2xl opacity-0 group-hover:opacity-30 transition-opacity duration-500 blur-lg" />
@@ -328,7 +328,7 @@ export default function QualificationsPage() {
                 key={index}
                 variants={itemVariants}
                 whileHover={{ y: -4, scale: 1.01 }}
-                transition={{ type: "spring", stiffness: 300 }}
+                transition={{ type: "spring"as const, stiffness: 300 }}
                 className="group relative"
               >
                 <div className="absolute -inset-0.5 bg-gradient-to-r from-amber-600 to-orange-600 rounded-2xl opacity-0 group-hover:opacity-30 transition-opacity duration-500 blur-lg" />

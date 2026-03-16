@@ -59,7 +59,7 @@ export default function Hero() {
         <motion.div
           initial={{ scale: 0 }}
           animate={{ scale: 1 }}
-          transition={{ delay: 0.2, type: "spring" }}
+          transition={{ delay: 0.2, type: "spring"as const }}
           className="inline-flex items-center px-4 py-2 rounded-full bg-gray-800/30 backdrop-blur-sm border border-gray-700 text-sm font-medium mb-8"
         >
           <span className="relative flex h-2 w-2 mr-2">

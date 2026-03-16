@@ -56,7 +56,7 @@ export default function About() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           whileHover={{ scale: 1.02 }}
-          transition={{ type: "spring", stiffness: 300 }}
+          transition={{ type: "spring"as const, stiffness: 300 }}
           className="mb-8 group"
         >
           <div className="relative">
@@ -464,7 +464,7 @@ export default function About() {
             <motion.div
               key={i}
               whileHover={{ y: -8, scale: 1.05 }}
-              transition={{ type: "spring", stiffness: 300 }}
+              transition={{ type: "spring"as const, stiffness: 300 }}
               className="bg-gray-800/30 backdrop-blur-sm border border-gray-700 rounded-xl p-4 text-center hover:border-purple-500/50 hover:shadow-lg hover:shadow-purple-500/10 transition-all duration-300 group"
             >
               <div className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">

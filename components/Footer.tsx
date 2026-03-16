@@ -54,7 +54,7 @@ export default function Footer() {
       y: 0,
       opacity: 1,
       transition: {
-        type: "spring",
+        type: "spring"as const,
         stiffness: 100,
         damping: 10
       }
@@ -109,7 +109,7 @@ export default function Footer() {
             <motion.h3 
               className="text-3xl md:text-4xl lg:text-5xl font-bold mb-3 group relative"
               whileHover={{ scale: 1.02 }}
-              transition={{ type: "spring", stiffness: 400 }}
+              transition={{ type: "spring"as const, stiffness: 400 }}
             >
               <span className="bg-gradient-to-r from-purple-400 via-blue-400 to-cyan-400 bg-clip-text text-transparent group-hover:from-purple-300 group-hover:to-cyan-300 transition-all duration-500">
                 Sanjana Bhardwaj
@@ -168,7 +168,7 @@ export default function Footer() {
                 key={link.name}
                 variants={itemVariants}
                 whileHover={{ y: -4 }}
-                transition={{ type: "spring", stiffness: 400 }}
+                transition={{ type: "spring"as const, stiffness: 400 }}
                 className="flex items-center"
               >
                 <motion.a
@@ -193,7 +193,7 @@ export default function Footer() {
                     <motion.span 
                       className={`text-gray-400 group-hover:text-${link.color}-400 transition-colors duration-300`}
                       whileHover={{ rotate: 5, scale: 1.1 }}
-                      transition={{ type: "spring", stiffness: 400 }}
+                      transition={{ type: "spring"as const, stiffness: 400 }}
                     >
                       {link.icon}
                     </motion.span>
@@ -233,7 +233,7 @@ export default function Footer() {
             <motion.span 
               className="bg-gray-900 px-4 text-xs text-gray-600 font-mono border border-gray-800 rounded-full py-1"
               whileHover={{ scale: 1.05, color: "#a78bfa", borderColor: "#a78bfa" }}
-              transition={{ type: "spring", stiffness: 400 }}
+              transition={{ type: "spring"as const, stiffness: 400 }}
             >
               &lt;!-- footer --&gt;
             </motion.span>
