@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
 import projects from "../../data/projects";
@@ -8,7 +8,8 @@ import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import { ArrowRightIcon } from "@heroicons/react/24/outline";
 
 export default function ProjectsPage() {
-  const containerVariants = {
+  // Fixed container variants with proper typing
+  const containerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
@@ -18,14 +19,15 @@ export default function ProjectsPage() {
     }
   };
 
-  const itemVariants = {
+  // Fixed item variants with "as const" for transition type
+  const itemVariants: Variants = {
     hidden: { y: 20, opacity: 0 },
     visible: {
       y: 0,
       opacity: 1,
-      transition: {
-        type: "spring",
-        stiffness: 100
+      transition: { 
+        type: "spring" as const, 
+        stiffness: 100 
       }
     }
   };
@@ -74,7 +76,7 @@ export default function ProjectsPage() {
               key={index}
               variants={itemVariants}
               whileHover={{ y: -8, scale: 1.02 }}
-              transition={{ type: "spring", stiffness: 300 }}
+              transition={{ type: "spring" as const, stiffness: 300 }}
               className="group relative"
             >
               {/* Gradient border effect on hover */}
@@ -137,6 +139,7 @@ export default function ProjectsPage() {
                       rel="noopener noreferrer"
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
+                      transition={{ type: "spring" as const, stiffness: 400 }}
                       className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-gray-800 border border-gray-700 text-gray-300 rounded-lg hover:border-purple-500 hover:text-purple-400 transition-all duration-300 text-sm"
                     >
                       <FaGithub className="w-4 h-4" />
@@ -151,6 +154,7 @@ export default function ProjectsPage() {
                         rel="noopener noreferrer"
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
+                        transition={{ type: "spring" as const, stiffness: 400 }}
                         className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-gradient-to-r from-purple-600 to-blue-600 text-white rounded-lg hover:from-purple-700 hover:to-blue-700 transition-all duration-300 text-sm"
                       >
                         <FaExternalLinkAlt className="w-3 h-3" />
