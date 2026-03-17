@@ -26,7 +26,7 @@ export default function ProjectsPage() {
       y: 0,
       opacity: 1,
       transition: {
-        type: "spring",
+        type: "spring" as const,
         stiffness: 100,
         damping: 20 // Optional: add damping for smoother springs
       } as Transition
@@ -78,7 +78,7 @@ export default function ProjectsPage() {
               variants={itemVariants}
               whileHover={{ y: -8, scale: 1.02 }}
               transition={{
-                type: "spring",
+                type: "spring" as const,
                 stiffness: 300,
                 damping: 20 // Optional: add damping for smoother springs
               }}
@@ -145,7 +145,7 @@ export default function ProjectsPage() {
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
                       transition={{
-                        type: "spring",
+                        type: "spring" as const,
                         stiffness: 400,
                         damping: 20 // Optional: add damping for smoother springs
                       }}
@@ -164,7 +164,7 @@ export default function ProjectsPage() {
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
                         transition={{
-                          type: "spring",
+                          type: "spring" as const,
                           stiffness: 400,
                           damping: 20 // Optional: add damping for smoother springs
                         }}
