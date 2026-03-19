@@ -20,7 +20,7 @@ const projects = [
     description: "Modern developer portfolio with dark theme, smooth animations, and responsive design. Built with Next.js and Tailwind CSS.",
     tech: ["Next.js", "Tailwind CSS", "Framer Motion", "TypeScript"],
     github: "https://github.com/sanjana-bh/portfolio",
-    live: "https://sanjana-portfolio.vercel.app",
+    live: "https://sanjana-portfolio-seven.vercel.app/",
     image: "/projects/portfolio.png"
   },
   {
