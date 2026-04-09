@@ -4,7 +4,7 @@ const projects = [
     description: "A full-stack educational platform with course management, user authentication, video streaming, and interactive quizzes. Features role-based access for students and instructors.",
     tech: ["MongoDB", "Express.js", "React", "Node.js", "Tailwind CSS", "JWT"],
     github: "https://github.com/sanjana-bh/learning-platform",
-    live: "https://learning-platform-demo.vercel.app",
+    live: "https://educare-1-6uqd.onrender.com",
     image: "/projects/educare.png"
   },
   {
