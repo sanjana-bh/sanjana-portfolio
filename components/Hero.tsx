@@ -173,7 +173,7 @@ export default function Hero() {
           </Link>
 
           <Link
-            href="/resume.pdf"
+            href="/Sanjana_Bhardwaj_Resume.pdf"
             download
             className="group relative px-8 py-3 bg-gray-800/30 backdrop-blur-sm border border-gray-700 text-white rounded-xl font-medium overflow-hidden transition-all duration-300 hover:shadow-lg hover:shadow-cyan-500/25 hover:border-cyan-500 hover:text-cyan-400"
           >
